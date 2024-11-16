@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Unsplash Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple web app that allows users to search for photos using the [Unsplash API](https://unsplash.com/developers).
 
-## Available Scripts
+![image](app.png)
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+- **React** for the UI components.
+- **Redux** for state management.
+- **Unsplash** for retrieving photos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensure you have [Node.js](https://nodejs.org/) installed. This project uses Node.js v22.11.0.
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/jsalvad0r/unsplash-search-app.git
 
-### `npm run build`
+   cd unsplash-search-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔑 Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Duplicate the .env.example file, which is located in the root of the project, and rename it to .env. Then, update the following variables:
 
-### `npm run eject`
+```bash
+REACT_APP_API_KEY="<YOUR_API_KEY>"
+REACT_APP_BASE_API_URL="https://api.unsplash.com"
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- REACT_APP_API_KEY: Your API key for accessing the Unsplash API.
+- REACT_APP_BASE_API_URL: Base URL for the Unsplash API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Note: The .env.example file already contains a valid API_KEY that you can use for testing purposes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Building and Running the App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Start the development server:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   The app will be running at http://localhost:3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Create a production build:
 
-### Code Splitting
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   This will generate a build/ folder with optimized assets.
